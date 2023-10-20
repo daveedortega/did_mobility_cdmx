@@ -285,8 +285,6 @@ test <- data.frame(id = 1:length(colonias_cdmx$geometry))# La función necesita 
 colonias_cdmx <- st_transform(colonias_cdmx,st_crs(fecha_robos[[1]]$geometry))
 colonias_cdmx <- colonias_cdmx %>% st_make_valid()
 
-# Intersect ---------------------------------------------------------------
-
 tok <- Sys.time()
 # Core Crimes
 robos_fechas_intersecciones<- iterated_intersection(fecha_robos,test,colonias_cdmx) 
