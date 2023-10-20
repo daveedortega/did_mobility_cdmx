@@ -166,8 +166,6 @@ l12b <- read_sf("input/mapas/stc_l12/stc_l1_l12_b500.shp") # Toda la línea
 # L1
 l1b <-  read_sf("input/mapas/stc_l1/stc_l1_ec500m.shp") # Estaciones Cerradas
 
-# Intersecta lineas con mapa para identificar colonias --------------------
-
 colonias_cdmx <- st_transform(colonias_cdmx,st_crs(cablebus_1b)) # Cambiamos mapa a mismo CRS de otros, ahora todos tienen el mismo
 colonias_cdmx <- colonias_cdmx %>% st_make_valid()
 
