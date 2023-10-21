@@ -162,7 +162,7 @@ trole_l9b <- read_sf("input/mapas/trolebus_l9/trolebus_l9_b500.shp")
 #TR E
 trole_elevadob <- read_sf("input/mapas/trolebus_elevado/tr_e_b500_v.shp")
 # L12
-l12b <- read_sf("input/mapas/stc_l12/stc_l1_l12_b500.shp") # Toda la línea
+l12b <- read_sf("input/mapas/stc_l12/stc_l1_l12_b500.shp") %>% filter(LINEA == 12) # Toda la línea 12
 # L1
 l1b <-  read_sf("input/mapas/stc_l1/stc_l1_ec500m.shp") # Estaciones Cerradas
 
