@@ -35,7 +35,7 @@ inviales_panel <- inviales_panel %>%
                                          '07-212', '07-213', '07-214', '11-042', '11-045', '03-112', '07-234', '11-055',
                                          '11-058', '07-236', '07-237', '07-238', '07-240'),1,0)) %>% # Complete stops until July
   mutate(complete_stop = (l_1b * 103 + closed_l12 * 89)) %>% 
-  select(-CVEUT, -geometry) %>%
+  select(-CVEUT) %>%
   select(id_col, numeric_date, start, stop, complete_stop, everything()) %>% 
   mutate(POB2010 = as.numeric(POB2010))
 
@@ -48,7 +48,6 @@ start_panel <- inviales_panel %>% filter(stop == 0)
 # Stop Panel
 
 stop_panel <- inviales_panel %>% filter(start == 0)
-stop_panel
 
 # DiD Start Objects -------------------------------------------------------------
 
@@ -156,14 +155,14 @@ ggdid(agg_start_complete, title = "ATT(g) Start effect on complete Inviales")
 agg_start_choquecl %>% summary()
 ggdid(agg_start_choquecl, title = "ATT(g) Start effect on Choques con Lesionados")
 
-ggdid(agg_start_choquesl, title = "ATT(t) Start effect on Choques sin Lesionados")
+ggdid(agg_start_choquesl, title = "ATT(g) Start effect on Choques sin Lesionados")
 agg_start_choquesl %>% summary()
 
 agg_start_atropellados %>% summary()
-ggdid(agg_start_atropellados, title = "ATT(t) Start effect on Atropellados")
+ggdid(agg_start_atropellados, title = "ATT(g) Start effect on Atropellados")
 
 agg_start_moto %>% summary()
-ggdid(agg_start_moto, title = "ATT(t) Start effect on Moto accidents")
+ggdid(agg_start_moto, title = "ATT(g) Start effect on Moto accidents")
 
 # DiD Complete Stop -------------------------------------------------------
 

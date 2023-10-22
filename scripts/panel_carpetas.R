@@ -374,7 +374,7 @@ trole_l9b <- read_sf("input/mapas/trolebus_l9/trolebus_l9_b500.shp")
 #TR E
 trole_elevadob <- read_sf("input/mapas/trolebus_elevado/tr_e_b500_v.shp")
 # L12
-l12b <- read_sf("input/mapas/stc_l12/stc_l1_l12_b500.shp") # Toda la línea
+l12b <- read_sf("input/mapas/stc_l12/stc_l1_l12_b500.shp") %>% filter(LINEA == 12) # Toda la línea
 # L1
 l1b <-  read_sf("input/mapas/stc_l1/stc_l1_ec500m.shp") # Estaciones Cerradas
 
@@ -418,13 +418,14 @@ dummy_id <- tibble(CVEUT = unique(complete_df$CVEUT), id_col = 1:length(unique(c
 numeric_date <- tibble( dates_complete = unique(complete_df$dates_complete), numeric_date = 1:length(unique(complete_df$dates_complete)))
 
 carpetas_panel <- complete_df %>% left_join(dummy_id) %>% left_join(numeric_date) %>% 
-  select(id_col, numeric_date, POB2010, total_delitos, robos, d_sexuales, asesinatos, viol_fam, lesiones_danios)
+  select(id_col, numeric_date, CVEUT, dates_complete, 
+         POB2010, total_delitos, robos, d_sexuales, asesinatos, viol_fam, lesiones_danios, 
+         cb_1b, cb_2b, tr_9b, tr_eb, l_1b, l_12b)
 
 # Sanity check
 
 carpetas_panel %>% count(numeric_date) %>% count(n)
 carpetas_panel %>% count(id_col) %>% count(n)
-
 
 
 rm(list = setdiff(ls(), c('inviales_panel', 'carpetas_panel')))
