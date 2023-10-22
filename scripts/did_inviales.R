@@ -109,7 +109,7 @@ agg_start_moto <- aggte(did_moto_start, type = 'simple', na.rm = T)
 
 
 # ATT starts
-agg_start_complete
+agg_start_complete 
 agg_start_choquecl
 agg_start_choquesl
 agg_start_atropellados

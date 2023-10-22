@@ -105,7 +105,7 @@ did_lesiones_start <- att_gt(
 )
 
 # Start Effects -----------------------------------------------------------------
-
+ggdid(did_total_start, title = "ATT(g,t) Effects of Starting a new line on Total Crime")
 # ATT
 
 agg_start_complete <- aggte(did_total_start, type = 'simple', na.rm = T)
