@@ -57,7 +57,7 @@ did_total_start <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "start",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel
 )
 # Choques con Lesionados
@@ -66,7 +66,7 @@ did_choque_cl_start <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "start",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel
 )
 # Choques Sin Lesionados
@@ -75,7 +75,7 @@ did_choque_sl_start <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "start",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel
 )
 # Atropellados
@@ -84,7 +84,7 @@ did_atropellados_start <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "start",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel
 )
 # Accidentes en Moto (Empiezan a registrarse en el periodo 38)
@@ -93,11 +93,18 @@ did_moto_start <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "start",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel
 )
 
 # Start Effects -----------------------------------------------------------------
+
+# ATT(g,t) Plots
+
+ggdid(did_total_start, ncol = 2, group = 85, title = "ATT(g,t) Effects on the Opening of the STE Trolebús L - 9", grtitle = "")
+ggdid(did_total_start, ncol = 2, group = 91, title = "ATT(g,t) Effects on the Opening of the CB - L1", grtitle = "")
+ggdid(did_total_start, ncol = 2, group = 92, title = "ATT(g,t) Effects on the Opening of the CB - L2", grtitle = "")
+ggdid(did_total_start, ncol = 2, group = 106, title = "ATT(g,t) Effects on the Opening of the STE Trolebús Elevado L - 10", grtitle = "")
 
 # ATT
 
@@ -172,7 +179,7 @@ did_total_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "complete_stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel
 )
 # Choques con Lesionados
@@ -181,7 +188,7 @@ did_choque_cl_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "complete_stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel
 )
 # Choques Sin Lesionados
@@ -190,7 +197,7 @@ did_choque_sl_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "complete_stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel
 )
 # Atropellados
@@ -199,7 +206,7 @@ did_atropellados_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "complete_stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel
 )
 
@@ -209,11 +216,16 @@ did_moto_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "complete_stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel
 )
 
 # Stop Effects ------------------------------------------------------------
+
+# ATT(g,t) Plots
+
+ggdid(did_total_stop, ncol = 2, group = 89, title = "ATT(g,t) Effects on the Closing of the STC L - 12", grtitle = "")
+ggdid(did_total_stop, ncol = 2, group = 103, title = "ATT(g,t) Effects on the Closing of the STC L - 1", grtitle = "")
 
 # ATT
 
@@ -288,7 +300,7 @@ did_total_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel %>% filter(numeric_date<109)
 )
 # Choques con Lesionados
@@ -297,7 +309,7 @@ did_choque_cl_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel %>% filter(numeric_date<109)
 )
 # Choques Sin Lesionados
@@ -306,7 +318,7 @@ did_choque_sl_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel %>% filter(numeric_date<109)
 )
 # Atropellados
@@ -315,7 +327,7 @@ did_atropellados_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel %>% filter(numeric_date<109)
 )
 # Accidentes en Moto (Empiezan a registrarse en el periodo 38)
@@ -324,11 +336,16 @@ did_moto_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = inviales_panel %>% filter(numeric_date<109)
 )
 
 # Filtered Stop Effects ---------------------------------------------------
+
+# ATT(g,t) Plots
+
+ggdid(did_total_stop, ncol = 2, group = 89, title = "ATT(g,t) Effects on the Closing of the STC L - 12", grtitle = "")
+ggdid(did_total_stop, ncol = 2, group = 103, title = "ATT(g,t) Effects on the Closing of the STC L - 1", grtitle = "")
 
 # ATT
 

@@ -21,7 +21,7 @@ rm(list=setdiff(ls(), c("inviales_panel", 'carpetas_panel')))
 # L12: 65
 # L12 Reopening of 1st strech: 85
 # Reopening of 2nd Strech: 91 (Last obs for now)
-carpetas_panel %>% count(numeric_date, dates_complete) %>% View()
+# carpetas_panel %>% count(numeric_date, dates_complete) %>% View()
 carpetas_panel <- carpetas_panel %>% 
   mutate(start =  cb_1b * 67 + cb_2b * 68 + tr_eb * 82 + tr_9b * 62) %>% # Start 
   mutate(start = ifelse(start == 150, 68,start)) %>% # Treated before
@@ -55,7 +55,7 @@ did_total_start <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "start",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = start_panel
 )
 # Robos
@@ -64,7 +64,7 @@ did_robos_start <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "start",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = start_panel
 )
 # Delitos Sexuales
@@ -73,7 +73,7 @@ did_dsex_start <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "start",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = start_panel
 )
 # Asesinatos
@@ -82,7 +82,7 @@ did_asesinatos_start <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "start",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = start_panel
 )
 # Violencia Familiar
@@ -91,7 +91,7 @@ did_violfam_start <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "start",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = start_panel
 )
 # Lesiones - Daños
@@ -100,12 +100,19 @@ did_lesiones_start <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "start",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = start_panel
 )
 
 # Start Effects -----------------------------------------------------------------
-ggdid(did_total_start, title = "ATT(g,t) Effects of Starting a new line on Total Crime")
+
+# ATT(g,t) Plots
+
+ggdid(did_total_start, ncol = 2, group = 62, title = "ATT(g,t) Effects on the Opening of the STE Trolebús L - 9 on Total Crime", grtitle = "")
+ggdid(did_total_start, ncol = 2, group = 67, title = "ATT(g,t) Effects on the Opening of the CB - L1 on Total Crime", grtitle = "")
+ggdid(did_total_start, ncol = 2, group = 68, title = "ATT(g,t) Effects on the Opening of the CB - L2 on Total Crime", grtitle = "")
+ggdid(did_total_start, ncol = 2, group = 82, title = "ATT(g,t) Effects on the Opening of the STE Trolebús Elevado L - 10 on Total Crime", grtitle = "")
+
 # ATT
 
 agg_start_complete <- aggte(did_total_start, type = 'simple', na.rm = T)
@@ -188,7 +195,7 @@ did_total_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "complete_stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = stop_panel
 )
 # Robos
@@ -197,7 +204,7 @@ did_robos_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "complete_stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = stop_panel
 )
 # Delitos Sexuales
@@ -206,7 +213,7 @@ did_dsex_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "complete_stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = stop_panel
 )
 # Asesinatos
@@ -215,7 +222,7 @@ did_asesinatos_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "complete_stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = stop_panel
 )
 # Violencia Familiar
@@ -224,7 +231,7 @@ did_violfam_stop <- att_gt(
   tname = "numeric_date",
   idname = "id_col",
   gname = "complete_stop",
-  xformla = ~POB2010,
+  # xformla = ~POB2010,
   data = stop_panel
 )
 # Lesiones - Daños
@@ -240,6 +247,10 @@ did_lesiones_stop <- att_gt(
 
 # Complete Stop Effects ---------------------------------------------------
 
+# ATT(g,t)
+
+ggdid(did_total_stop, group = 65, title = "ATT(g,t) Effects on the Closing of the STC Metro L - 12 on Total Crime", grtitle = "")
+ggdid(did_total_stop, group = 79, title = "ATT(g,t) Effects on the Closing of the STC Metro L - 1 on Total Crime", grtitle = "")
 
 # ATT
 
@@ -372,6 +383,11 @@ did_lesiones_stop <- att_gt(
 )
 
 # Filtered Stop Effects ---------------------------------------------------
+
+# ATT(g,t)
+
+ggdid(did_total_stop, group = 65, title = "ATT(g,t) Effects on the Closing of the STC Metro L - 12 on Total Crime", grtitle = "")
+ggdid(did_total_stop, group = 79, title = "ATT(g,t) Effects on the Closing of the STC Metro L - 1 on Total Crime", grtitle = "")
 
 # ATT
 
