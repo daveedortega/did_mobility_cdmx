@@ -144,16 +144,16 @@ agg_start_complete %>% summary()
 ggdid(agg_start_complete, title = "ATT(t) Start effect on complete reported crimes")
 
 agg_robos_start %>% summary()
-ggdid(agg_robos_start, title = "ATT(t) Start effect on theft reports")
+ggdid(agg_robos_start, title = "ATT(t) Start effect on robbery reports")
 
 agg_dsex_start %>% summary()
-ggdid(agg_dsex_start, title = "ATT(t) Start effect on Sex crimes")
+ggdid(agg_dsex_start, title = "ATT(t) Start effect on Sex related crimes")
 
 agg_asesinatos_start %>% summary()
 ggdid(agg_asesinatos_start, title = "ATT(t) Start effect on homicides")
 
 agg_violfam_start %>% summary()
-ggdid(agg_violfam_start, title = "ATT(t) Start effect on family violence")
+ggdid(agg_violfam_start, title = "ATT(t) Start effect on domestic violence")
 
 agg_lesiones_start %>% summary()
 ggdid(agg_lesiones_start, title = "ATT(t) Start effect on injuries and damages")
@@ -172,10 +172,10 @@ agg_start_complete %>% summary()
 ggdid(agg_start_complete, title = "ATT(g) Start effect on complete reported crimes")
 
 agg_robos_start %>% summary()
-ggdid(agg_robos_start, title = "ATT(g) Start effect on theft reports") # Diminishes significantly CB L1
+ggdid(agg_robos_start, title = "ATT(g) Start effect on robbery reports") # Diminishes significantly CB L1
 
 agg_dsex_start %>% summary()
-ggdid(agg_dsex_start, title = "ATT(g) Start effect on Sex crimes")
+ggdid(agg_dsex_start, title = "ATT(g) Start effect on sex related crimes")
 
 agg_asesinatos_start %>% summary()
 ggdid(agg_asesinatos_start, title = "ATT(g) Start effect on homicides")
@@ -283,16 +283,16 @@ agg_stop_complete %>% summary()
 ggdid(agg_stop_complete, title = "ATT(t) Stop effect on complete reported crimes")
 
 agg_robos_stop %>% summary()
-ggdid(agg_robos_stop, title = "ATT(t) Stop effect on theft reports")
+ggdid(agg_robos_stop, title = "ATT(t) Stop effect on robbery reports")
 
 agg_dsex_stop %>% summary()
-ggdid(agg_dsex_stop, title = "ATT(t) Stop effect on Sex crimes")
+ggdid(agg_dsex_stop, title = "ATT(t) Stop effect on sex related crimes")
 
 agg_asesinatos_stop %>% summary()
 ggdid(agg_asesinatos_stop, title = "ATT(t) Stop effect on homicides")
 
 agg_violfam_stop %>% summary()
-ggdid(agg_violfam_stop, title = "ATT(t) Stop effect on family violence")
+ggdid(agg_violfam_stop, title = "ATT(t) Stop effect on domestic violence")
 
 agg_lesiones_stop %>% summary()
 ggdid(agg_lesiones_stop, title = "ATT(t) Stop effect on injuries and damages")
@@ -311,16 +311,16 @@ agg_stop_complete %>% summary()
 ggdid(agg_stop_complete, title = "ATT(g) Stop effect on complete reported crimes")
 
 agg_robos_stop %>% summary()
-ggdid(agg_robos_stop, title = "ATT(g) Stop effect on theft reports") # Diminishes significantly CB L1
+ggdid(agg_robos_stop, title = "ATT(g) Stop effect on robberies reports") # Diminishes significantly CB L1
 
 agg_dsex_stop %>% summary()
-ggdid(agg_dsex_stop, title = "ATT(g) Stop effect on Sex crimes")
+ggdid(agg_dsex_stop, title = "ATT(g) Stop effect on Sex related crimes")
 
 agg_asesinatos_stop %>% summary()
 ggdid(agg_asesinatos_stop, title = "ATT(g) Stop effect on homicides")
 
 agg_violfam_stop %>% summary()
-ggdid(agg_violfam_stop, title = "ATT(g) Stop effect on family violence")
+ggdid(agg_violfam_stop, title = "ATT(g) Stop effect on domestic violence")
 
 agg_lesiones_stop %>% summary()
 ggdid(agg_lesiones_stop, title = "ATT(g) Stop effect on injuries and damages")
@@ -420,16 +420,16 @@ agg_stop_complete %>% summary()
 ggdid(agg_stop_complete, title = "ATT(t) Stop effect on complete reported crimes")
 
 agg_robos_stop %>% summary()
-ggdid(agg_robos_stop, title = "ATT(t) Stop effect on theft reports")
+ggdid(agg_robos_stop, title = "ATT(t) Stop effect on robbery reports")
 
 agg_dsex_stop %>% summary()
-ggdid(agg_dsex_stop, title = "ATT(t) Stop effect on Sex crimes")
+ggdid(agg_dsex_stop, title = "ATT(t) Stop effect on sex related crimes")
 
 agg_asesinatos_stop %>% summary()
 ggdid(agg_asesinatos_stop, title = "ATT(t) Stop effect on homicides")
 
 agg_violfam_stop %>% summary()
-ggdid(agg_violfam_stop, title = "ATT(t) Stop effect on family violence")
+ggdid(agg_violfam_stop, title = "ATT(t) Stop effect on domestic violence")
 
 agg_lesiones_stop %>% summary()
 ggdid(agg_lesiones_stop, title = "ATT(t) Stop effect on injuries and damages")
@@ -448,16 +448,16 @@ agg_stop_complete %>% summary()
 ggdid(agg_stop_complete, title = "ATT(g) Stop effect on complete reported crimes")
 
 agg_robos_stop %>% summary()
-ggdid(agg_robos_stop, title = "ATT(g) Stop effect on theft reports") # Diminishes significantly CB L1
+ggdid(agg_robos_stop, title = "ATT(g) Stop effect on robbery reports") # Diminishes significantly CB L1
 
 agg_dsex_stop %>% summary()
-ggdid(agg_dsex_stop, title = "ATT(g) Stop effect on Sex crimes")
+ggdid(agg_dsex_stop, title = "ATT(g) Stop effect on Sex related crimes")
 
 agg_asesinatos_stop %>% summary()
 ggdid(agg_asesinatos_stop, title = "ATT(g) Stop effect on homicides")
 
 agg_violfam_stop %>% summary()
-ggdid(agg_violfam_stop, title = "ATT(g) Stop effect on family violence")
+ggdid(agg_violfam_stop, title = "ATT(g) Stop effect on domestic violence")
 
 agg_lesiones_stop %>% summary()
 ggdid(agg_lesiones_stop, title = "ATT(g) Stop effect on injuries and damages")

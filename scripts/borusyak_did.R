@@ -325,7 +325,6 @@ did_lesiones_stop
 
 # Filtered Stop DiD ----------------------------------------------------------------
 
-
 # Total Delitos
 did_total_stop <- did_imputation(
   yname = "total_delitos",
@@ -382,19 +381,6 @@ did_dsex_stop
 did_asesinatos_stop
 did_violfam_stop
 did_lesiones_stop
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

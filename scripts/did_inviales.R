@@ -133,19 +133,19 @@ agg_start_moto <- aggte(did_moto_start, type = 'dynamic', na.rm = T)
 
 # ATT(t) Plots
 agg_start_complete %>% summary()
-ggdid(agg_start_complete, title = "ATT(t) Start effect on complete Inviales")
+ggdid(agg_start_complete, title = "ATT(t) Start effect on All Road Incidents")
 
 agg_start_choquecl %>% summary()
-ggdid(agg_start_choquecl, title = "ATT(t) Start effect on Choques con Lesionados")
+ggdid(agg_start_choquecl, title = "ATT(t) Start effect on Crashes with Injuries")
 
 agg_start_choquesl %>% summary()
-ggdid(agg_start_choquesl, title = "ATT(t) Start effect on Choques sin Lesionados")
+ggdid(agg_start_choquesl, title = "ATT(t) Start effect on Crashes without Injuries")
 
 agg_start_atropellados %>% summary()
-ggdid(agg_start_atropellados, title = "ATT(t) Start effect on Atropellados")
+ggdid(agg_start_atropellados, title = "ATT(t) Start effect on Run Overs")
 
 agg_start_moto %>% summary()
-ggdid(agg_start_moto, title = "ATT(t) Start effect on Moto accidents")
+ggdid(agg_start_moto, title = "ATT(t) Start effect on Motorcycle Incidents")
 
 # ATT(g)
 
@@ -157,19 +157,19 @@ agg_start_moto <- aggte(did_moto_start, type = 'group', na.rm = T)
 
 # ATT(g) Plots
 agg_start_complete %>% summary()
-ggdid(agg_start_complete, title = "ATT(g) Start effect on complete Inviales")
+ggdid(agg_start_complete, title = "ATT(g) Start effect on All Road Incidents")
 
 agg_start_choquecl %>% summary()
-ggdid(agg_start_choquecl, title = "ATT(g) Start effect on Choques con Lesionados")
+ggdid(agg_start_choquecl, title = "ATT(g) Start effect on Crashes with Injuries")
 
-ggdid(agg_start_choquesl, title = "ATT(g) Start effect on Choques sin Lesionados")
+ggdid(agg_start_choquesl, title = "ATT(g) Start effect on Crashes without Injuries")
 agg_start_choquesl %>% summary()
 
 agg_start_atropellados %>% summary()
-ggdid(agg_start_atropellados, title = "ATT(g) Start effect on Atropellados")
+ggdid(agg_start_atropellados, title = "ATT(g) Start effect on Run Overs")
 
 agg_start_moto %>% summary()
-ggdid(agg_start_moto, title = "ATT(g) Start effect on Moto accidents")
+ggdid(agg_start_moto, title = "ATT(g) Start effect on Motorcycle Incidents")
 
 # DiD Complete Stop -------------------------------------------------------
 
@@ -254,19 +254,19 @@ agg_stop_moto <- aggte(did_moto_stop, type = 'dynamic', na.rm = T)
 
 # ATT(t) Plots
 agg_stop_complete %>% summary()
-ggdid(agg_stop_complete, title = "ATT(t) Stop effect on complete Inviales")
+ggdid(agg_stop_complete, title = "ATT(t) Stop effect on all road incidents")
 
 agg_stop_choquecl %>% summary()
-ggdid(agg_stop_choquecl, title = "ATT(t) Stop effect on Choques con Lesionados")
+ggdid(agg_stop_choquecl, title = "ATT(t) Stop effect on crashes with injuries")
 
 agg_stop_choquesl %>% summary()
-ggdid(agg_stop_choquesl, title = "ATT(t) Stop effect on Choques sin Lesionados")
+ggdid(agg_stop_choquesl, title = "ATT(t) Stop effect on crashes without injuries")
 
 agg_stop_atropellados %>% summary()
-ggdid(agg_stop_atropellados, title = "ATT(t) Stop effect on Atropellados")
+ggdid(agg_stop_atropellados, title = "ATT(t) Stop effect on run overs")
 
 agg_stop_moto %>% summary()
-ggdid(agg_stop_moto, title = "ATT(t) Stop effect on Moto accidents")
+ggdid(agg_stop_moto, title = "ATT(t) Stop effect on motorcycle accidents")
 
 # ATT(g)
 
@@ -278,19 +278,19 @@ agg_stop_moto <- aggte(did_moto_stop, type = 'group', na.rm = T)
 
 # ATT(g) Plots
 agg_stop_complete %>% summary()
-ggdid(agg_stop_complete, title = "ATT(g) Stop effect on complete Inviales")
+ggdid(agg_stop_complete, title = "ATT(g) Stop effect on all road incidents")
 
 agg_stop_choquecl %>% summary()
-ggdid(agg_stop_choquecl, title = "ATT(g) Stop effect on Choques con Lesionados")
+ggdid(agg_stop_choquecl, title = "ATT(g) Stop effect on crashes with injuries")
 
 agg_stop_choquesl %>% summary()
-ggdid(agg_stop_choquesl, title = "ATT(t) Stop effect on Choques sin Lesionados")
+ggdid(agg_stop_choquesl, title = "ATT(t) Stop effect on crashes without injuries")
 
 agg_stop_atropellados %>% summary()
-ggdid(agg_stop_atropellados, title = "ATT(t) Stop effect on Atropellados")
+ggdid(agg_stop_atropellados, title = "ATT(t) Stop effect on run overs")
 
 agg_stop_moto %>% summary()
-ggdid(agg_stop_moto, title = "ATT(t) Stop effect on Moto accidents")
+ggdid(agg_stop_moto, title = "ATT(t) Stop effect on Motorcycle incidents")
 
 # DiD Filtered Stop -------------------------------------------------------
 
@@ -374,19 +374,19 @@ agg_stop_moto <- aggte(did_moto_stop, type = 'dynamic', na.rm = T)
 
 # ATT(t) Plots
 agg_stop_complete %>% summary()
-ggdid(agg_stop_complete, title = "ATT(t) Stop effect on complete Inviales")
+ggdid(agg_stop_complete, title = "ATT(t) Stop effect on all road incidents")
 
 agg_stop_choquecl %>% summary()
-ggdid(agg_stop_choquecl, title = "ATT(t) Stop effect on Choques con Lesionados")
+ggdid(agg_stop_choquecl, title = "ATT(t) Stop effect on crashes with injuries")
 
 agg_stop_choquesl %>% summary()
-ggdid(agg_stop_choquesl, title = "ATT(t) Stop effect on Choques sin Lesionados")
+ggdid(agg_stop_choquesl, title = "ATT(t) Stop effect on crashes without injuries")
 
 agg_stop_atropellados %>% summary()
-ggdid(agg_stop_atropellados, title = "ATT(t) Stop effect on Atropellados")
+ggdid(agg_stop_atropellados, title = "ATT(t) Stop effect on run overs")
 
 agg_stop_moto %>% summary()
-ggdid(agg_stop_moto, title = "ATT(t) Stop effect on Moto accidents")
+ggdid(agg_stop_moto, title = "ATT(t) Stop effect on Motorcycle incidents")
 
 # ATT(g)
 
@@ -398,38 +398,19 @@ agg_stop_moto <- aggte(did_moto_stop, type = 'group', na.rm = T)
  
 # ATT(g) Plots
 agg_stop_complete %>% summary()
-ggdid(agg_stop_complete, title = "ATT(g) Stop effect on complete Inviales")
+ggdid(agg_stop_complete, title = "ATT(g) Stop effect on all road incidents")
 
 agg_stop_choquecl %>% summary()
-ggdid(agg_stop_choquecl, title = "ATT(g) Stop effect on Choques con Lesionados")
+ggdid(agg_stop_choquecl, title = "ATT(g) Stop effect on crashes with injuries")
 
 agg_stop_choquesl %>% summary()
-ggdid(agg_stop_choquesl, title = "ATT(t) Stop effect on Choques sin Lesionados")
+ggdid(agg_stop_choquesl, title = "ATT(t) Stop effect on crashes without injuries")
 
 agg_stop_atropellados %>% summary()
-ggdid(agg_stop_atropellados, title = "ATT(t) Stop effect on Atropellados")
+ggdid(agg_stop_atropellados, title = "ATT(t) Stop effect on run overs")
 
 agg_stop_moto %>% summary()
-ggdid(agg_stop_moto, title = "ATT(t) Stop effect on Moto accidents")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ggdid(agg_stop_moto, title = "ATT(t) Stop effect on Motorcycle incidents")
 
 
 
